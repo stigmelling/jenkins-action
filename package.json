@@ -1,0 +1,24 @@
+{
+  "name": "jenkins-action",
+  "version": "1.0.0",
+  "description": "Github action to trigger an on-prem jenkins buildWithParameters",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stigmelling/jenkins-action.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stigmelling/jenkins-action/issues"
+  },
+  "homepage": "https://github.com/stigmelling/jenkins-action#readme",
+  "dependencies": {
+    "@actions/core": "^1.2.3",
+    "request": "^2.88.2"
+  }
+}

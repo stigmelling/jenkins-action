@@ -1,0 +1,24 @@
+name: 'TriggerJenkinsBuild'
+description: 'Trigger Jenkins build with parameters'
+inputs:
+  jenkinsUrl:  
+    description: 'URL to Jenkinsserver'
+    required: true
+  username:  
+    description: 'Username'
+    required: true
+  token:  
+    description: 'Token'
+    required: true
+  job:  
+    description: 'Name of job'
+    required: true
+  params:  
+    description: 'Json with "name":"value" params'
+    required: false
+outputs:
+  time: 
+    description: 'The time the job is posted to jenkins'
+runs:
+  using: 'node12'
+  main: 'index.js'
