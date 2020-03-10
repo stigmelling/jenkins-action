@@ -34,3 +34,8 @@ The time we greeted you.
 
 uses: stigmellingjenkins-action@v1
 with:
+  jenkinsUrl: 'https://yourjenkinsserver.com'
+  username: 'username'
+  token: '123456....'
+  job: 'name_of_job_in_jenkins'
+  params: '{"paramName": "paramValue"}'
