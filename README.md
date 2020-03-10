@@ -32,6 +32,7 @@ The time we greeted you.
 
 ## Example usage
 
+```
 uses: stigmellingjenkins-action@v1
 with:
   jenkinsUrl: 'https://yourjenkinsserver.com'
@@ -39,3 +40,9 @@ with:
   token: '123456....'
   job: 'name_of_job_in_jenkins'
   params: '{"paramName": "paramValue"}'
+```
+
+## Jenkins configuration
+Add API-token to user profile. 
+
+![jenkins.png](jenkins.png)

@@ -8,20 +8,13 @@ try {
   const jobName = core.getInput('job');
   const params = JSON.parse( core.getInput('params'));
 
-//   // params
-//   const params = {
-//     gittag: "fromwf"
-//   };
-  console.log(params);
-
-  const time = (new Date()).toTimeString();
-
-
+  
   request.post({baseUrl: jenkinsUrl
-        , uri: 'job/' + jobName + '/buildWithParameters' 
-        , qs: params})
-        .auth(username,token)
-
+    , uri: 'job/' + jobName + '/buildWithParameters' 
+    , qs: params})
+    .auth(username,token)
+    
+  const time = (new Date()).toTimeString();
   core.setOutput("time", time);
 } catch (error) {
   core.setFailed(error.message);
