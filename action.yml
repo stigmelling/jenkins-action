@@ -1,5 +1,8 @@
 name: 'TriggerJenkinsBuild'
 description: 'Trigger Jenkins build with parameters'
+branding:
+  icon: 'award'  
+  color: 'green'
 inputs:
   jenkinsUrl:  
     description: 'URL to Jenkinsserver'
